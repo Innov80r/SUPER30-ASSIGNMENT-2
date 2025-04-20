@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Image Gallery</title>
+  <link rel="stylesheet" href="question10.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2d3748;
+      font-weight: 600;
+    }
+    
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      aspect-ratio: 1 / 1;
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      text-align: center;
+    }
+    
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+    
+    @media (max-width: 768px) {
+      .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 15px;
+      }
+      
+      .gallery-item:nth-child(9) {
+        grid-column: span 2;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .gallery-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        gap: 15px;
+      }
+      
+      .gallery-item:nth-child(9) {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>GRID-GALLERY</h1>
+  
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="https://cdn1.tripoto.com/media/filter/tst/img/1429685/Image/1581687460_4manali.jpg" alt="Gallery Image 1">
+      <div class="caption">Manali View</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://th.bing.com/th/id/R.f2257da2442701aba39349eb1128cc2a?rik=H%2fq3tvjE5DCHDA&riu=http%3a%2f%2frishikesh.net%2fwp-content%2fuploads%2f2019%2f11%2fbigstock-Rishikesh-India-Circa-April-329638714.jpg&ehk=Uptj5ZNmgYbgnXdTnXB21UeyOAYxRd7N2uJYsT4MWHM%3d&risl=1&pid=ImgRaw&r=0" alt="Gallery Image 2">
+      <div class="caption">HRISHIKESH TEMPLE </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://www.jagranimages.com/images/newimg/28112022/28_11_2022-dehradun_23232640.webp" alt="Gallery Image 3">
+      <div class="caption">DEHRADUN GHANTA GHAR</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://th.bing.com/th/id/OIP.6c9mbkPZKu0izSNux0DRCgHaE7?rs=1&pid=ImgDetMain" alt="Gallery Image 4">
+      <div class="caption">RAJASTHAN</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://th.bing.com/th/id/OIP.Ntqd6mkqf0uT13Bagk2j8QHaJQ?w=140&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Gallery Image 5">
+      <div class="caption">KEDARNATH</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://th.bing.com/th/id/OIP.kcm6kSos0kCNRh2ybHXEbgHaFJ?w=240&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Gallery Image 6">
+      <div class="caption">BADRINATH</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://th.bing.com/th/id/OIP.22cL2M0kaDwAYl2ExAfxQwHaJO?w=138&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Gallery Image 7">
+      <div class="caption">DEVPRAYAG</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://th.bing.com/th/id/OIP.3KgmqDl4NlQEyolaULIajwHaFj?w=207&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Gallery Image 8">
+      <div class="caption">MUSSOORIE</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://th.bing.com/th/id/OIP.dZKQ56VK5qyJft3Vk-WLqAHaE8?w=245&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Gallery Image 9">
+      <div class="caption">KASOL</div>
+    </div>
+  </div>
+</body>
+</html>

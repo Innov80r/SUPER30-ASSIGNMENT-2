@@ -1,0 +1,37 @@
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem 0;
+        }
+
+        .nav-container ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-container ul li {
+            margin: 0 1rem;
+        }
+
+        .nav-container ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-container ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }

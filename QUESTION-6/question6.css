@@ -1,0 +1,54 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color:dark;
+    padding: 30px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+  }
+
+  thead {
+    background-color: #90e0ef;
+    color: black;
+  }
+
+  tfoot {
+    background-color: #90e0ef;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+
+  td[class^="subject-"] {
+    color: white;
+    font-weight: bold;
+  }
+
+  .subject-math { background-color: #43aa8b;  }
+  .subject-english { background-color:#43aa8b; ; }
+  .subject-science { background-color:#43aa8b; ; }
+  .subject-history { background-color:#43aa8b; ; }
+  .subject-art { background-color:#43aa8b; }
+  .subject-pe { background-color: #43aa8b; }
+
+  caption {
+    caption-side: top;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #555;
+  }

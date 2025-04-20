@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <link rel="stylesheet" href="question11.css" />
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <div class="header-container">
+        <div class="logo">Responsive Queen</div>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    
+    <main>
+      <div class="content-container">
+        <div class="card">
+          <h2>Welcome to Responsive Queen/King</h2>
+          <p>This is a responsive layout template that works on all devices. The layout includes a header, main content, and footer.</p>
+          <p>On larger screens, the layout remains spacious. On smaller screens, the layout shifts to a more mobile-friendly design.</p>
+        </div>
+        
+        <div class="card">
+          <h2>Features</h2>
+          <p>This responsive layout includes:</p>
+          <ul>
+            <li>Header with navigation menu that collapses on mobile</li>
+            <li>Main content area with card-based design</li>
+            <li>Footer with responsive links</li>
+            <li>Clean, modern design with subtle shadows and colors</li>
+          </ul>
+        </div>
+        
+        <div class="card">
+          <h2>Ready for Content</h2>
+          <p>This template is ready for your content. Simply replace the placeholder text and add your own images, videos, or other media.</p>
+          <p>The layout uses CSS Grid for the overall structure with flexbox for inner components, making it both powerful and flexible.</p>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Responsive Queen/King. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  
+  <script>
+    // Simple toggle for mobile menu
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

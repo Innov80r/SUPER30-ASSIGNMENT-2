@@ -1,0 +1,25 @@
+/* Apply styling to the paragraph */
+.style-paragraph {
+    color:darkcyan;
+    font-size: 18px;
+    font-family: 'Georgia', 'Garamond', 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.style-paragraph:hover {
+    background-color: #e0e0e0;
+    color: #333;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
